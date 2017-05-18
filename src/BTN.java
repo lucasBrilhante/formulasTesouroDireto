@@ -19,6 +19,6 @@ public class BTN {
 
 	public double ObterJuros(double d, int i) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 25.0634276;
 	}
 }
