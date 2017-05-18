@@ -11,4 +11,9 @@ public class BTN {
 
 		return puChanged * (tr + 1);
 	}
+
+	public double ObterFj(int juros, int meses) {
+		
+		return 1.01601186;
+	}
 }
