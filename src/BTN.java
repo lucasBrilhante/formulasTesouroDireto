@@ -12,8 +12,8 @@ public class BTN {
 		return puChanged * (tr + 1);
 	}
 
-	public double ObterFj(int juros, int meses) {
-		
-		return 0.01601186;
+	public double ObterFj(double juros, double meses) {
+		double fj = (juros/100) + 1;
+		return (Math.pow(fj,(meses/12)) -1);
 	}
 }
