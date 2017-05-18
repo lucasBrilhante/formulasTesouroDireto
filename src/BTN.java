@@ -16,4 +16,9 @@ public class BTN {
 		double fj = (juros/100) + 1;
 		return (Math.pow(fj,(meses/12)) -1);
 	}
+
+	public double ObterJuros(double d, int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
