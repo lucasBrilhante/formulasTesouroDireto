@@ -37,7 +37,12 @@ public class BTNTest {
 	@Test
 	public void testCalculoFj(){
 		double fj = btn.ObterFj(10, 2);
-		Assert.assertEquals(1.01601186, fj, 0.00000001);
+		Assert.assertEquals(0.01601186, fj, 0.00000001);
+	}
+	@Test
+	public void testCalculoFj2(){
+		double fj = btn.ObterFj(20, 4);
+		Assert.assertEquals(0.062658569, fj, 0.00000001);
 	}
 	
 }

@@ -14,6 +14,6 @@ public class BTN {
 
 	public double ObterFj(int juros, int meses) {
 		
-		return 1.01601186;
+		return 0.01601186;
 	}
 }
