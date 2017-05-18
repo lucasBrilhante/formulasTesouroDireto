@@ -34,4 +34,10 @@ public class BTNTest {
 		double precoUnitario = btn.calculoPrecoUnitario(200.0000019, 1);
 		Assert.assertEquals(400.000002, precoUnitario, erro);
 	}
+	@Test
+	public void testCalculoFj(){
+		double fj = btn.ObterFj(10, 2);
+		Assert.assertEquals(1.01601186, fj, 0.00000001);
+	}
+	
 }
