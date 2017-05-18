@@ -44,5 +44,9 @@ public class BTNTest {
 		double fj = btn.ObterFj(20, 4);
 		Assert.assertEquals(0.062658569, fj, 0.00000001);
 	}
-	
+	@Test
+	public void testCalculoJuros(){
+		double juros = btn.ObterJuros(0.062658569, 400);
+		Assert.assertEquals(25,0634276, juros, erro);
+	}
 }
