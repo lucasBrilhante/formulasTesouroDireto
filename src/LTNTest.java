@@ -9,6 +9,7 @@ public class LTNTest {
 	LTN ltn;
 	@Before
 	public void setUp() throws Exception {
+		ltn = new LTN();
 	}
 
 	@Test
