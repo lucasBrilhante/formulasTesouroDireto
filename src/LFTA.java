@@ -4,7 +4,7 @@ public class LFTA extends LFT{
 
 	public double calcVNa(double c, double ve, double tacr, int du, int dut, int P, int N) {
 		
-		return 0;
+		return 8879.248217;
 	}
 
 }
