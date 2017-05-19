@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class NTNA1Test {
 
-	private static final double PRECISAO_6 = 0.000001;
+	private static final double PRECISAO_6 = PrecisaoHelper.PRECISAO_6;
 	
 	@Test
 	public void valorDolarAtualizacaoIgualDolarBase() {
@@ -37,6 +37,6 @@ public class NTNA1Test {
 	public void deveRetornarJuros2() {
 		NTNA1 ntna1 = new NTNA1();
 		double juros = ntna1.calculaJuros(2000, "02/05/2017", "20/04/2017", 5);
-		Assert.assertEquals(3.333333333, juros, PRECISAO_6);
+		Assert.assertEquals(3.333333, juros, PRECISAO_6);
 	}
 }
