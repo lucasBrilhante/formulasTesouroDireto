@@ -44,4 +44,21 @@ public class LFTTest {
 		Assert.assertEquals(1.000495624, c, 0.00000001);
 	}
 	
+	@Test
+	public void testeLFTC2() {
+		double celic1 = LFT.calcCelic(10);
+		double celic2 = LFT.calcCelic(3);
+		double celic3 = LFT.calcCelic(5);
+		
+		double c = LFT.calcC(celic1, celic2, celic3);
+		Assert.assertEquals(1.00068935, c, 0.00000001);
+	}
+	@Test
+	public void testeLFTC3() {
+		double celic1 = LFT.calcCelic(10);
+		
+		double c = LFT.calcC(celic1);
+		Assert.assertEquals(1.00037828, c, 0.00000001);
+	}
+	
 }
