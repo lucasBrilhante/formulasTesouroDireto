@@ -56,7 +56,12 @@ public class BTNTest {
 	}
 	@Test
 	public void testCalculoPrincipal(){
-		double principal = btn.ObterPrincipal(3000, 3);
-		Assert.assertEquals(3000, principal, erro);
+		double principal = btn.ObterPrincipal(400.000002, 3);
+		Assert.assertEquals(1200.000006, principal, erro);
+	}
+	@Test
+	public void testCalculoPrincipal2(){
+		double principal = btn.ObterPrincipal(399, 2);
+		Assert.assertEquals(798, principal, erro);
 	}
 }

@@ -17,13 +17,11 @@ public class BTN {
 		return (Math.pow(fj,(meses/12)) -1);
 	}
 
-	public double ObterJuros(double d, int i) {
-		// TODO Auto-generated method stub
+	public double ObterJuros(double d, double i) {
 		return d*i;
 	}
 
-	public double ObterPrincipal(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+	public double ObterPrincipal(double pu, double qtd) {
+		return pu*qtd;
 	}
 }
