@@ -4,7 +4,6 @@ import org.junit.Test;
 public class NTNA1Test {
 
 	private static final double PRECISAO_6 = 0.000001;
-	private static final double PRECISAO_8 = 0.00000001;
 	
 	@Test
 	public void valorDolarAtualizacaoIgualDolarBase() {
