@@ -21,4 +21,9 @@ public class BTN {
 		// TODO Auto-generated method stub
 		return d*i;
 	}
+
+	public double ObterPrincipal(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
