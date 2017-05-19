@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NTNA3Test {
-	
+
 	private static final double PRECISAO_6 = PrecisaoHelper.PRECISAO_6;
 
 	@Test
