@@ -18,4 +18,11 @@ public class NTNA1Test {
 		double amortizacao = ntna1.getAmortizacao(3.5, 3.45, 5000);
 		Assert.assertEquals(5072.463768116, amortizacao, ERRO);
 	}
+	
+	@Test
+	public void valorDolarAtualizacaoMenorDolarBase() {
+		NTNA1 ntna1 = new NTNA1();
+		double amortizacao = ntna1.getAmortizacao(3.3, 3.45, 5000);
+		Assert.assertEquals(4782.608695652, amortizacao, ERRO);
+	}
 }
