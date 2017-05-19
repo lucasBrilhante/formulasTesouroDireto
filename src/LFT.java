@@ -25,7 +25,7 @@ public class LFT {
 
 	public static double calcLFT(double d, double c) {
 		
-		return 1.000495624*900;
+		return d*c;
 	}
 
 }
