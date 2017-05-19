@@ -5,7 +5,7 @@ public class NTNA6 {
 		return (ussa / ussb) * ve;
 	}
 
-	public double calcularJuros(double vna, String dtp, String dtup, int i) {
+	public double calcularJuros(double vna, String dtp, String dtup, double i) {
 		return 105.833333333;
 	}
 }
