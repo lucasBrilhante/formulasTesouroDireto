@@ -23,4 +23,9 @@ public class LFT {
 		return celicR;
 	}
 
+	public static double calcLFT(double d, int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
