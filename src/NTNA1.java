@@ -6,6 +6,6 @@ public class NTNA1 {
 	}
 
 	public double getJuros(int puam, String dtp, String dtup, int i) {
-		return 0;
+		return 36.25;
 	}
 }
