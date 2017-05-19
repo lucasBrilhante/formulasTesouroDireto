@@ -6,7 +6,7 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class LTNTest {
-	LTN ltn
+	LTN ltn;
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -15,5 +15,4 @@ public class LTNTest {
 	public void test() {
 		Assert.assertNotNull(ltn);
 	}
-
 }
