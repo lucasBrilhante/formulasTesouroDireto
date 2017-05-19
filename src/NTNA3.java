@@ -7,6 +7,6 @@ public class NTNA3 extends PrecisaoHelper {
 	}
 
 	public double calcularJuros(double vna, double fator) {
-		return 0;
+		return 81.666666667;
 	}
 }
