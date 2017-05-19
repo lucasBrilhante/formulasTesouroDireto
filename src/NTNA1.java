@@ -1,17 +1,20 @@
 
-public class NTNA1 {
+public class NTNA1 extends PrecisaoHelper {
 
 	public double calculaAmortizacao(double ussa, double ussb, int vl) {
-		return (ussa / ussb) * vl;
+		double valorAmortizacao = (ussa / ussb) * vl;
+		return definirPrecisao(valorAmortizacao, PRECISAO_6);
 	}
 
 	public double calculaJuros(int puam, String dtp, String dtup, int i) {
 		double fatorJuros = calculaFator(dtp, dtup, i);
-		return puam * fatorJuros;
+		double juros = puam * fatorJuros;
+		return definirPrecisao(juros, PRECISAO_6);
 	}
 
 	private double calculaFator(String dtp, String dtup, double i) {
 		int diferencaDias = (DataHelper.calculaDiferencaDias(dtup, dtp));
-		return (diferencaDias / 360.0) * (i / 100.0);
+		double fatorJuros = (diferencaDias / 360.0) * (i / 100.0);
+		return definirPrecisao(fatorJuros, PRECISAO_8);
 	}
 }

@@ -7,9 +7,11 @@ public class PrecisaoHelper {
 	public static final int PRECISAO_6 = 6;
 	public static final int PRECISAO_8 = 8;
 
-	public static double definirPrecisao(double valor, int precisao) {
+	public double definirPrecisao(double valor, int precisao) {
 		Double valorOriginal = new Double(valor);
-		Double valorFormatado = BigDecimal.valueOf(valorOriginal).setScale(precisao, RoundingMode.HALF_UP).doubleValue();
+		Double valorFormatado = BigDecimal.valueOf(valorOriginal)
+				.setScale(precisao, RoundingMode.HALF_UP)
+				.doubleValue();
 		return valorFormatado;
 	}
 }
