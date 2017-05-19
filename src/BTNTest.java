@@ -54,4 +54,9 @@ public class BTNTest {
 		double juros = btn.ObterJuros(0.01601186, 800);
 		Assert.assertEquals(12.809488, juros, erro);
 	}
+	@Test
+	public void testCalculoPrincipal(){
+		double principal = btn.ObterPrincipal(3000, 3);
+		Assert.assertEquals(3000, principal, erro);
+	}
 }
