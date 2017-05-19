@@ -1,12 +1,16 @@
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class NTNA3Test {
+	
+	private static final double PRECISAO_6 = PrecisaoHelper.PRECISAO_6;
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testCalculoValorNominal() {
+		NTNA3 ntna3 = new NTNA3();
+		double valorNominal = ntna3.calcularValorNominal(2.7, 2.9);
+		Assert.assertEquals(931.034482759, valorNominal, PRECISAO_6);
 	}
-
 }
