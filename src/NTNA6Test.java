@@ -18,4 +18,11 @@ public class NTNA6Test {
 		double valorNominalAtualizado = ntna6.calcularValorNominalAtualizado(3.0, 1.1, 312.546);
 		Assert.assertEquals(852.398181818, valorNominalAtualizado, PRECISAO_6);
 	}
+
+	@Test
+	public void testCalculoJuros() {
+		NTNA6 ntna6 = new NTNA6();
+		double juros = ntna6.calcularJuros(6000, "01/02/2017", "08/06/2017", 5);
+		Assert.assertEquals(105.833333333, juros, PRECISAO_6);
+	}
 }
