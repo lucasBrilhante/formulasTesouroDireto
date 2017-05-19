@@ -61,5 +61,11 @@ public class LFTTest {
 		Assert.assertEquals(1.00037828, c, 0.00000001);
 	}
 	
+	@Test
+	public void testeLFTcalcLFT() {
+		
+		double lft = LFT.calcLFT(900.00, 2);
+		Assert.assertEquals(1.000495624*900, lft, 0.00000001);
+	}
 	
 }
