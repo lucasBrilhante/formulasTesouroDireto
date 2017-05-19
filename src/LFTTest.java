@@ -20,7 +20,7 @@ public class LFTTest {
 	
 	@Test
 	public void testeLFTCelic1() {
-		double celic = LFT(5);
+		double celic = LFT.calcCelic(5);
 		Assert.assertEquals(0.00019363, celic,0.00000001);
 	}
 }
