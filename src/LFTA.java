@@ -3,8 +3,15 @@ public class LFTA extends LFT{
 	//C VE Tacr du dut P N
 
 	public double calcVNa(double c, double ve, double tacr, int du, int dut, int P, int N) {
-		
-		return 8879.248217;
+		double result;
+		result = c*ve;
+		double x;
+		double y;
+		x = 1+ tacr/100;
+		x = Math.pow(x,du/dut);
+		y = 1+ tacr;
+		y = Math.pow(y,du/dut)*(1/(P-N));
+		return result*(x-y);
 	}
 
 }
