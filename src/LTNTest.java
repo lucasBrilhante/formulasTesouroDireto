@@ -18,7 +18,7 @@ public class LTNTest {
 	@Test
 	public void testCalculoLTN(){
 		double n = ltn.calcLTN(0.1);
-		Assert.assertEquals(999.62185, n,0.0000001);
+		Assert.assertEquals(999.621856, n,0.0000001);
 	}
 	@Test
 	public void testCalculoLTN2(){
