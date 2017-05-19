@@ -23,7 +23,7 @@ public class LFT {
 		return celicR;
 	}
 
-	public static double calcLFT(double d, int i) {
+	public static double calcLFT(double d, double c) {
 		
 		return 1.000495624*900;
 	}
