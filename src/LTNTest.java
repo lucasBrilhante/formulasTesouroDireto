@@ -1,9 +1,8 @@
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import junit.framework.Assert;
 
 public class LTNTest {
 	LTN ltn;
@@ -13,7 +12,12 @@ public class LTNTest {
 	}
 
 	@Test
-	public void test() {
+	public void testNotNull() {
 		Assert.assertNotNull(ltn);
+	}
+	@Test
+	public void testCalculoLTN(){
+		double n = ltn.calcLTN(0.1);
+		Assert.assertEquals(999,621856515, n);
 	}
 }
