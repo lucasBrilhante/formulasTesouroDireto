@@ -10,6 +10,7 @@ public class LFTATest {
 	LFTA lfta;
 	@Before
 	public void setUp() throws Exception {
+		lfta = new LFTA();
 	}
 
 	@Test
