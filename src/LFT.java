@@ -2,7 +2,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class LFT {
-
+	double[] celic = {3,4,3,4,3,4};
 	public static double calcCelic(double taxa) {
 		// TODO Auto-generated method stub
 		double x = (taxa/100)+1;
@@ -24,8 +24,8 @@ public class LFT {
 	}
 
 	public static double calcLFT(double d, int i) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return 1.000495624*900;
 	}
 
 }
