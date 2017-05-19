@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class LFT {
 
@@ -10,8 +12,15 @@ public class LFT {
 	}
 
 	public static double calcC(double... celic) {
-		// TODO Auto-generated method stub
-		return 1.000495624;
+		double result = 1;
+		
+		for(double i : celic){
+			result = result*(i+1);
+		}
+		Double celicR = BigDecimal.valueOf(result)
+			    .setScale(8, RoundingMode.FLOOR)
+			    .doubleValue();
+		return celicR;
 	}
 
 }
