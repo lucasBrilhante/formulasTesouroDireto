@@ -1,7 +1,7 @@
 
 public class NTNA1 {
 
-	public double getAmortizacao(double d, double e, int i) {
-		return 0;
+	public double getAmortizacao(double ussa, double ussb, int vl) {
+		return 5000;
 	}
 }
