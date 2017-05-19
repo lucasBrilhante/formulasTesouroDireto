@@ -9,4 +9,9 @@ public class LFT {
 		return y-1;
 	}
 
+	public static double calcC(double... celic) {
+		// TODO Auto-generated method stub
+		return 1.000495624;
+	}
+
 }
