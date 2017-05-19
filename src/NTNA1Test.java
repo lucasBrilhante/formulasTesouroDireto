@@ -33,4 +33,11 @@ public class NTNA1Test {
 		double juros = ntna1.getJuros(3000, "03/05/2017", "04/04/2017", 15);
 		Assert.assertEquals(36.25, juros, PRECISAO_6);
 	}
+	
+	@Test
+	public void deveRetornarJuros2() {
+		NTNA1 ntna1 = new NTNA1();
+		double juros = ntna1.getJuros(2000, "02/05/2017", "20/04/2017", 5);
+		Assert.assertEquals(3.333333333, juros, PRECISAO_6);
+	}
 }
