@@ -22,14 +22,14 @@ public class NTNA3Test {
 	@Test
 	public void testCalculoJuros() {
 		NTNA3 ntna3 = new NTNA3();
-		double juros = ntna3.calcularJuros(3500, 0.023333333);
-		Assert.assertEquals(81.666666667, juros, PRECISAO_6);
+		double juros = ntna3.calcularJuros(3500, 0.5, 7);
+		Assert.assertEquals(10.208333333, juros, PRECISAO_6);
 	}
 
 	@Test
 	public void testCalculoJuro2() {
 		NTNA3 ntna3 = new NTNA3();
-		double juros = ntna3.calcularJuros(1357, 1.567842);
-		Assert.assertEquals(2127.561594, juros, PRECISAO_6);
+		double juros = ntna3.calcularJuros(1357, 10, 5);
+		Assert.assertEquals(56.541666667, juros, PRECISAO_6);
 	}
 }
