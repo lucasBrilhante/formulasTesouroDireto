@@ -21,8 +21,14 @@ public class LFTATest {
 	@Test
 	public void testCalcVNa(){
 		double C = lfta.calcC(0.0001,0.0002);
-		double result = lfta.calcVNa(C,10000,0.0245,30,30,10,1);
+		double result = lfta.calcVNa(C,10000,0.0245,15,30,10,1);
 		Assert.assertEquals(8879.248217, result,0.000001);
-	}	
+	}
+	@Test
+	public void testCalcVNa2(){
+		double C = lfta.calcC(0.0001,0.0002);
+		double result = lfta.calcVNa(C,5000,0.0245,30,30,5,1);
+		Assert.assertEquals(3721.716254, result,0.000001);
+	}
 
 }
