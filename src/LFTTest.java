@@ -17,5 +17,10 @@ public class LFTTest {
 		Assert.assertNotNull(lft);
 	}
 	
-
+	
+	@Test
+	public void testeLFTCelic1() {
+		double celic = LFT(5);
+		Assert.assertEquals(0.00019363, celic,0.00000001);
+	}
 }
