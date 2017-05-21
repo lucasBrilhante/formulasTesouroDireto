@@ -18,4 +18,11 @@ public class NTNBTest {
 		double valorNominal = ntnb.calcularValorNominal(1700, 2500, 2000, 7000, 5, 3);
 		Assert.assertEquals(3281.634919856, valorNominal, PRECISAO_6);
 	}
+	
+	@Test
+	public void tetCalculoJuros() {
+		NTNB ntnb = new NTNB();
+		double juros = ntnb.calcularJuros(5000, 7, 20, 10, 10);
+		Assert.assertEquals(140.9439726, juros, PRECISAO_6);
+	}
 }
