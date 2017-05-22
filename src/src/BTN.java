@@ -1,16 +1,10 @@
 package src;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
-public class BTN {
+public class BTN extends PrecisaoHelper {
 
 	public double calculoPrecoUnitario(double pu, double tr) {
-		
-		Double puChanged = BigDecimal.valueOf(pu)
-			    .setScale(6, RoundingMode.FLOOR)
-			    .doubleValue();
-
-		return puChanged * (tr + 1);
+		double precoUnitario = pu * (tr + 1);
+		return definirPrecisao(precoUnitario, PRECISAO_6);
 	}
 
 	public double ObterFj(double juros, double meses) {

@@ -1,7 +1,6 @@
 package src;
 
 public class LFTA extends LFT{
-	//C VE Tacr du dut P N
 
 	public double calcVNa(double c, double ve, double tacr, int du, int dut, int P, int N) {
 		double result;
@@ -14,5 +13,4 @@ public class LFTA extends LFT{
 		y = Math.pow(y,du/dut)*(1/(P-N));
 		return result*(x-y);
 	}
-
 }
