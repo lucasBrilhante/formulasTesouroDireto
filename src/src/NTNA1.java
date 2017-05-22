@@ -1,3 +1,4 @@
+package src;
 
 public class NTNA1 extends PrecisaoHelper {
 

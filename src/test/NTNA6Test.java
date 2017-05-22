@@ -1,5 +1,9 @@
+package test;
 import org.junit.Assert;
 import org.junit.Test;
+
+import src.NTNA6;
+import src.PrecisaoHelper;
 
 public class NTNA6Test {
 

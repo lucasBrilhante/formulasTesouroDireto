@@ -1,3 +1,4 @@
+package src;
 
 public class LFTA extends LFT{
 	//C VE Tacr du dut P N
